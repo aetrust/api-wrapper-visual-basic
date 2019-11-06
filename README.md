@@ -1,5 +1,7 @@
 # AET API VB Wrapper
-This repo provides a visual basic wrapper for the AET API, documented at https://developers.aetrust.com/?version=latest
+This repo provides a visual basic wrapper for the AET API, documented at https://developers.aetrust.com/?version=latest.
+The wrapper takes the inputs and constructs the signature and all other headers required by the AET API,
+it sends the request to the API and outputs the response from the API without modifying it.
 
 ## Getting started
 Import the 3 class files `AetrustHttpClient.vb`, `AetrustSignature.vb` & `AmericanEstateTrust.vb` to your project  
