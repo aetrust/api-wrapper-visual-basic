@@ -13,7 +13,7 @@ Dim myOrigin = "http://example.com"
 
 Dim body = "{""data"":{""type"":""users"",""attributes"":{""email"":""johndoe+2@example.com"",""password"":""ystt^Yj3PL"",""confirmPassword"": ""ystt^Yj3PL""}}}"
 
-Dim client = New AetrustHttpClient(New HttpClient(), apiKey, apiSecret, myOrigin)
+Dim client = New AetrustHttpClient(New HttpClient(), apiSecret, apiKey, myOrigin)
 Dim request = client.CreateRequest(aetApiUrl, New HttpMethod("POST"), body)
 Dim bodyToSend = request.Content.ReadAsStringAsync().Result
 Dim response = client.SendRequestAsync(request).Result
